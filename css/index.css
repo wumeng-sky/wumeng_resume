@@ -371,11 +371,11 @@ html,body{
         transform: rotate(360deg);
     }
 }
-.slide5 img{
+.slide5 img,.slide5 #job1,.slide5 #job2{
     position: absolute;
     opacity: 0;
 }
-#page5 img{
+#page5 img,#page5 #job1,#page5 #job2{
     opacity: 1;
 }
 .slide5 img:nth-child(1){
@@ -387,32 +387,40 @@ html,body{
 .slide5 img:nth-child(2){
     width: 2.5rem;
     height: 2.5rem;
-    left: 1.8rem;
+    left: 2.1rem;
     top:1.3rem;
 }
 .slide5 img:nth-child(3){
     width: 0.03rem;
     height: 5.21rem;
-    left: 3rem;
+    left: 3.3rem;
     top:4.4rem;
 }
 .slide5 img:nth-child(4){
     width: 1.2rem;
     height: 1.1rem;
-    left: 2.38rem;
+    left: 2.68rem;
     top:4rem;
 }
 .slide5 img:nth-child(5){
     width: 1.2rem;
     height: 1.1rem;
-    left: 2.38rem;
+    left: 2.68rem;
     top:6rem;
 }
-.slide5 img:nth-child(6){
-    width: 1.2rem;
-    height: 1.1rem;
-    left: 2.38rem;
-    bottom:2.5rem;
+.slide5 #job1{
+    color: #555555;
+    width: 2.6rem;
+    font-size: 0.36rem;
+    top:4.3rem;
+    left: 3.6rem;
+}
+.slide5 #job2{
+    color: #555555;
+    width: 2.6rem;
+    font-size: 0.36rem;
+    top:6.4rem;
+    left: 0.5rem;
 }
 #page5 img:nth-child(1){
     -webkit-animation: bounceInLeft 1s 0s 1 both;
@@ -421,4 +429,12 @@ html,body{
 #page5 img:nth-child(2){
     -webkit-animation: flip 1s 0.2s 1 both;
     animation: flip 1s 0.2s 1 both;
+}
+#page5 #job1{
+    -webkit-animation: bounceInRight 1s 0.4s 1 both;
+    animation: bounceInRight 1s 0.4s 1 both;
+}
+#page5 #job2{
+    -webkit-animation: bounceInLeft 1s 0.6s 1 both;
+    animation: bounceInLeft 1s 0.6s 1 both;
 }
